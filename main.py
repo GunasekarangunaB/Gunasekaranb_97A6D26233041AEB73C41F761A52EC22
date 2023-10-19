@@ -1,12 +1,12 @@
-def linear_search_product(product_list, target_product):
-    indices = []
-    for index, product in enumerate(product_list):
-        if product == target_product:
-            indices.append(index)
-    return indices
 
-# Example usage:
-products = ["Apple", "Mango", "Orange", "Grapes", "Apple", "Apple"]
-target = "Samsung"
-result = linear_search_product(products, target)
-print("Indices of", target, ":", result)
+def fact_rec(n):
+  if n == 0 or n == 1:
+    return 1
+  else:
+    return n * fact_rec(n - 1)
+
+
+number = int(input("Enter the value :"))
+res = fact_rec(number)
+
+print("The factorial of {} is {}.".format(number, res))
